@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon2"
+    android:id="@+id/LOGO"
+    android:layout_marginLeft="150dp"
+    android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="33dp"
+            android:layout_alignBottom="@+id/LOGO"
+            android:width="400dp"
+            android:height="500dp"
+            android:textSize="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="                                          About Us                        \n\n      Exam Beeper helps to provide easy access to your\n      important exams.You can set reminder, add or\n      delete any exam and get notified!!\n\n    ______________________________________________   \n\n\n                                      Developers' info                        \n                                 ______________________    \n\n                    Himanshu Garg(B.Tech CSE,JIIT-62)         \n                 __________________________________________    \n\n                    Prathamesh Upadhyay(B.Tech CSE,JIIT-62)      \n                  __________________________________________    \n\n                    Siddharth Nagaria(B.Tech CSE,JIIT-62)         \n                  __________________________________________    \n\n                   M Sadiq Hussain(B.Tech CSE,JIIT-62)         \n                  __________________________________________    \n\n                    Dhairya Goyal(B.Tech CSE,JIIT-62)         \n" />
+
+
+
+
+</LinearLayout>

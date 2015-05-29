@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <!--Schema loaded in yourapp, that's why used in showAsAction and actionViewClass-->
+
+
+    <!-- Search Widget -->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_search2"
+          android:title="Search Again"
+        yourapp:showAsAction="always|collapseActionView"
+          android:iconifiedByDefault="true"
+          android:hint="Search again"
+          android:orderInCategory="2"
+        yourapp:actionViewClass="android.widget.SearchView"/>
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" yourapp:showAsAction="never" />
+
+    <!--Sort Widget-->
+    <item android:id="@+id/action_sort" android:title="@string/action_sort"
+        android:orderInCategory="111" yourapp:showAsAction="ifRoom"
+
+        android:icon="@drawable/sort"/>
+
+
+
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exam_beeper.exam_beeper" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.exam_beeper.exam_beeper.Reminder"
+            android:label="@string/rem" >
+            <intent-filter>
+                <action android:name="android.intent.action.REMINDER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+            <meta-data
+ android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.exam_beeper.exam_beeper.MainActivity"
+></meta-data>
+         </activity>
+        <activity
+            android:name=".My_Account"
+            android:label="@string/title_activity_my__account" >
+        </activity>
+        <activity
+            android:name=".Exams_List"
+            android:label="@string/title_activity_exams__list"
+           android:theme="@style/Base.Theme.AppCompat.Light" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResult2"
+android:resource="@xml/searchable"
+ />
+
+        </activity>
+
+        <activity
+            android:name=".Custom_List"
+            android:label="@string/title_activity_custom__list" >
+        </activity>
+
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" >
+        </activity>
+
+
+        <service android:name="com.exam_beeper.exam_beeper.ScheduleService" />
+        <service android:name="com.exam_beeper.exam_beeper.NotifyService" />
+
+
+</application>
+</manifest>

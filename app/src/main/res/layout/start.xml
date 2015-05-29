@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout" >
+
+    <!--Below activity widgets when the transparent layout is gone -->
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bangladesh">
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/activity_main" />
+
+        <ImageView
+            android:id="@+id/ivDressshirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_layout"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:src="@drawable/b2"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+
+
+    <!--Below is the transparent layout positioned at startup -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88666666"
+        android:id="@+id/top_layout">
+
+        <ImageView
+            android:id="@+id/ivInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="25dp"
+            android:layout_marginRight="15dp"
+            android:clickable="false"
+            android:paddingLeft="20dip"
+            android:scaleType="center"
+            android:src="@drawable/china" />
+
+    </RelativeLayout>
+
+</FrameLayout>

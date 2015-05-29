@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Exam Beeper</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="Search">Search</string>
+    <string name="action_settings">About</string>
+    <string name="title_activity_my__account">My Account</string>
+    <string name="title_activity_exams__list">Exams List</string>
+    <string name="title_activity_custom__list">Custom List</string>
+    <string name="hello">flag</string>
+    <string name="search_title">search_title</string>
+    <string name="search">search</string>
+    <string name="search_hint">search_hint</string>
+    <string name="searchsearc">Search</string>
+    <string name="action_sort">action_sort</string>
+    <string name="popup_item1">popup_item1</string>
+    <string name="popup_item2">popup_item2</string>
+    <string name="sort_by_date">Sort By Date</string>
+    <string name="sort_by_exam">Sort By Exam</string>
+    <string name="rem">rem</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_about">About</string>
+
+</resources>
